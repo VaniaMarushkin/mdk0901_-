@@ -7,22 +7,18 @@
 </head>
 <body>
 <script>
-function isEmpty(obj) {
-        let counter = 0;
-        for (var key in obj) {
-            counter++;
-        }
-        if (counter == 0) {
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-        let schedule = {};
-    alert( isEmpty(schedule) );
-    schedule["8:30"] = "get up";
-    alert( isEmpty(schedule) );
+let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130
+};
+
+let sum = 0;
+for (let key in salaries) {
+  sum += salaries[key];
+}
+
+alert(sum);
 </script>
 </body>
 </html>
